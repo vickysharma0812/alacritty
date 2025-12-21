@@ -1,6 +1,6 @@
 [general]
 
-import = [ "./themes/rose-pine.toml" ]
+import = ["./themes/catppuccin-mocha.toml"]
 
 
 [env]
@@ -10,29 +10,28 @@ TERM = "xterm-256color"
 builtin_box_drawing = true
 size = 14.0
 
-[font.bold]
-# family = "VictorMono Nerd Font Mono"
-# family = "Hack Nerd Font Mono"
-family = "FiraCode Nerd Font Mono"
-style = "Bold"
-
-[font.bold_italic]
-# family = "VictorMono Nerd Font Mono"
-# family = "Hack Nerd Font Mono"
-family = "FiraCode Nerd Font Mono"
-style = "Bold Italic"
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
 
 [font.italic]
-# family = "VictorMono Nerd Font Mono"
-# family = "Hack Nerd Font Mono"
-family = "FiraCode Nerd Font Mono"
-style = "Italic"
+family = "VictorMono Nerd Font"
+style = "Medium Italic"         # "Light Italic"
 
-[font.normal]
-# family = "VictorMono Nerd Font Mono"
-# family = "Hack Nerd Font Mono"
-family = "FiraCode Nerd Font Mono"
-style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.bold_italic]
+family = "VictorMono Nerd Font"
+style = "SemiBold Italic"
+
+# [[keyboard.bindings]]
+# chars = "\\"
+# key = "¥"
+# mods = "Control"
+# mods = "Alt"
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -160,6 +159,17 @@ action = "ScrollToBottom"
 key = "G"
 mode = "Vi|~Search"
 
+# reference [https://stackoverflow.com/questions/16359878/how-to-map-shift-enter]
+[[keyboard.bindings]]
+chars = "\u001B[13;2u"
+key = "Return"
+mods = "Shift"
+
+[[keyboard.bindings]]
+chars = "\u001B[13;5u"
+key = "Return"
+mods = "Control"
+
 [scrolling]
 history = 5000
 
@@ -168,7 +178,7 @@ decorations = "full"
 dynamic_padding = false
 dynamic_title = true
 opacity = 1.0
-# option_as_alt = "Both"
+option_as_alt = "Both"
 title = "Alacritty"
 
 [window.class]
