@@ -8,24 +8,40 @@ TERM = "xterm-256color"
 
 [font]
 builtin_box_drawing = true
-size = 24.0
+size = 20.0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+# style = "Normal"
+# family = "Maple Mono NF"
+# style = "Thin"
+family = "CommitMono Nerd Font Mono"
 style = "Regular"
 
 [font.italic]
-family = "VictorMono Nerd Font"
-style = "Medium Italic"         # "Light Italic"
+# family = "VictorMono Nerd Font"
+# style = "Medium Italic"
+# family = "Maple Mono NF"
+# style = "Thin Italic"
+family = "CommitMono Nerd Font Mono"
+style = "Italic"
 
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Medium"
+# family = "JetBrainsMono Nerd Font"
+# style = "Medium"
+# family = "Maple Mono NF"
+# style = "Light"
+family = "CommitMono Nerd Font Mono"
+style = "Bold"
 
 [font.bold_italic]
-family = "VictorMono Nerd Font"
-style = "SemiBold Italic"
+# family = "VictorMono Nerd Font"
+# style = "SemiBold Italic"
+# family = "Maple Mono NF"
+# style = "Light Italic"
+family = "CommitMono Nerd Font Mono"
+style = "Bold Italic"
 
 # [[keyboard.bindings]]
 # chars = "\\"
